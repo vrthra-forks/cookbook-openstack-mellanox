@@ -1,10 +1,10 @@
 # cookbook-openstack-mellanox-cookbook
 
-TODO: Enter the cookbook description here.
+This cookbook is a translation of the puppet mellanox openstack module.
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+OpenPOWER
 
 ## Attributes
 
