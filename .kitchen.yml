@@ -27,7 +27,7 @@ provisioner:
           - vagrant
 
 platforms:
-  - name: centos-6.5
+  - name: centos-6.6
     driver_config:
       attributes:
         mysql:
@@ -37,6 +37,12 @@ platforms:
 
 suites:
   - name: default
+    run_list:
+      - recipe[openstack-mellanox]
+    excludes:
+      - fedora-20
+      - ubuntu-12.04
+  - name: full-stack
     run_list:
       - role[openstack_ops_database]
       - role[openstack_controller]
