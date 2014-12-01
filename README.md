@@ -37,6 +37,6 @@ Include `cookbook-openstack-mellanox` in your node's `run_list`:
 }
 ```
 
-## License and Authors
+## License and Authors 
 
 Author:: Oregon State University (<chef@osuosl.org>)
