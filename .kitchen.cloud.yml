@@ -60,6 +60,8 @@ platforms:
 
 suites:
   - name: default
+    provisioner:
+      name: chef_solo
     run_list:
       - recipe[openstack-mellanox]
     excludes:
