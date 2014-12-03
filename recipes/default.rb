@@ -16,3 +16,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+release = node['openstack']['release']
+yum_repository "mlnx-#{release}" do
+  description "Mellanox Openstack"
+  baseurl "http://www.mellanox.com/downloads/solutions/openstack/#{release}/repo/mlnx-#{release}"
+  gpgcheck false
+end
+
