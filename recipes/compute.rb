@@ -1,5 +1,5 @@
-include_recipie  "openstack-common"
-include_recipie "openstack-mellanox"
+include_recipe "openstack-common"
+include_recipe "openstack-mellanox"
 
 # TODO openstack-neutron-mellanox is not in the repository mlnx-icehouse
 ['eswitchd', 'mlnxvif', 'openstack-neutron-mellanox'].each do |pkg|
