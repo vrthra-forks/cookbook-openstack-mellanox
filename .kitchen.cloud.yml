@@ -59,20 +59,12 @@ platforms:
     image_ref: "Fedora 20"
 
 suites:
-  - name: default
-    provisioner:
-      name: chef_solo
-    run_list:
-      - recipe[openstack-mellanox]
-    excludes:
-      - fedora-20
-      - ubuntu-12.04
-  - name: full-stack
+  - name: compute
     run_list:
       - role[openstack_ops_database]
       - role[openstack_controller]
       - role[openstack_compute]
-      - recipe[openstack-mellanox]
+      - recipe[openstack-mellanox::compute]
     excludes:
       - fedora-20
       - ubuntu-12.04
