@@ -1,4 +1,4 @@
-source 'https://supermarket.getchef.com'
+source 'https://supermarket.chef.io'
 
 # Base deps
 cookbook "apt", ">= 2.3.8"
